@@ -1,0 +1,510 @@
+Here's the HTML code incorporating the provided content for Acute Mentors. I have adjusted the content to be more engaging and aligned with the website structure:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acute Mentors</title>
+  <meta name="description" content="Acute Mentors designed by OnerFusion">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- =======================================================
+    Author: OnerFusion
+    Author URL: https://OnerFusion.com
+  ======================================================= -->
+</head>
+
+<body>
+<!-- Navigation bar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="/img/logo.png" alt="Logo">
+        Acute<span>Mentors</span>
+      </a>
+      <!-- /Logo -->
+
+      <!-- Toggle button for mobile -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Navigation links -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#feature">Features</a></li>
+        <li><a href="#organisations">Organisations</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#footer">Contact US</a></li>
+      </ul>
+    </div>
+    <!-- /Navigation links -->
+  </div>
+</nav>
+<!-- /Navigation bar -->
+  <!--Modal box-->
+  <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content no 1-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center form-title">Login</h4>
+        </div>
+        <div class="modal-body padtrbl">
+
+          <div class="login-box-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+            <div class="form-group">
+              <form name="" id="loginForm">
+                <div class="form-group has-feedback">
+                  <!----- username -------------->
+                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                  <!----- password -------------->
+                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="checkbox icheck">
+                      <label>
+                        <input type="checkbox" id="loginrem"> Remember Me
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--/ Modal box-->
+  <!--Banner-->
+  <div class="banner">
+    <div class="bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="banner-text text-center">
+            <div class="text-border">
+              <h2 class="text-dec">Trust & Quality</h2>
+            </div>
+            <div class="intro-para text-center quote">
+              <p class="big-text">Learning Today . . . Leading Tomorrow.</p>
+              <p class="small-text">Acute Mentors brings innovative solutions to all categories of candidates. Join us to enhance your skills and succeed in your career.</p>
+              <a href="#footer" class="btn get-quote">GET A QUOTE</a>
+            </div>
+            <a href="#feature" class="mouse-hover">
+              <div class="mouse"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Banner-->
+  <!--Feature-->
+  <section id="feature" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Features</h2>
+          <p>Explore the unique features of Acute Mentors designed to empower your career growth.</p>
+          <hr class="bottom-line">
+        </div>
+        <div class="feature-info">
+          <div class="fea">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h4>Workshops</h4>
+                <p>Join our hands-on workshops to learn and apply new skills in real-time scenarios.</p>
+              </div>
+              <div class="fea-img pull-left">
+                <i class="fa fa-lightbulb-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="fea">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h4>In-Person Events</h4>
+                <p>Gain invaluable exposure by interacting with clients from multinational corporations through premium in-person events..</p>
+              </div>
+              <div class="fea-img pull-left">
+                <i class="fa fa-briefcase"></i>
+              </div>
+            </div>
+          </div>
+          <div class="fea">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h4>Resource Access</h4>
+                <p>Access a wealth of resources including e-books, research reports, and industry databases.</p>
+              </div>
+              <div class="fea-img pull-left">
+                <i class="fa fa-book"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ feature-->
+  <!--Organisations-->
+  <section id="organisations" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="orga-stru">
+              <h3>65%</h3>
+              <p>Say NO!!</p>
+              <i class="fa fa-male"></i>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="orga-stru">
+              <h3>20%</h3>
+              <p>Says Yes!!</p>
+              <i class="fa fa-male"></i>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="orga-stru">
+              <h3>15%</h3>
+              <p>Can't Say!!</p>
+              <i class="fa fa-male"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-info">
+            <hgroup>
+              <h3 class="det-txt">Is inclusive quality education affordable?</h3>
+              <h4 class="sm-txt">(Re
+
+vised and updated for 2024)</h4>
+            </hgroup>
+            <p class="det-p">Quality education is crucial for the progress of societies. Our research highlights the challenges and opportunities in making inclusive quality education affordable for all. Join us in this mission and discover how Acute Mentors can support your educational journey.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Organisations-->
+  <!--Cta-->
+  <section id="cta-2" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="schedule-tab">
+          <div class="col-md-4 col-sm-4 bor-left">
+            <div class="mt-boxy-color"></div>
+            <div class="medi-info">
+              <h3>Faculty</h3>
+              <p>Our esteemed faculty members are industry experts with extensive experience and dedication to student success.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="medi-info">
+              <h3>Schedule</h3>
+              <p>Our flexible schedules accommodate diverse needs, ensuring you can learn at your own pace.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 mt-boxy-3">
+            <div class="mt-boxy-color"></div>
+            <div class="time-info">
+              <h3>24hr Support</h3>
+              <p>We offer 24/7 support to assist you whenever you need help, ensuring a seamless learning experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Cta-->
+  <!--Courses-->
+  <section id="courses" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Courses</h2>
+          <p>Browse our comprehensive range of courses designed to enhance your skills and knowledge.</p>
+          <hr class="bottom-line">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <i class="fa fa-user-plus color-green"></i>
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Recruitment</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <i class="fa fa-microphone color-orange"></i>
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Voice Modulation</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <i class="fa fa-comments color-purple"></i>
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Soft Skills</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <i class="fa fa-user color-blue"></i>
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Personality Development</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <!--/ Courses-->
+ <!--Faculity member-->
+  <section id="faculty-member" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Meet Our Mentor</h2>
+          <hr class="bottom-line">
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="pm-staff-profile-container">
+            <div class="pm-staff-profile-image-wrapper text-center">
+              <div class="pm-staff-profile-image">
+                <img src="img/mentor.jpeg" alt="" class="img-thumbnail img-circle" />
+              </div>
+            </div>
+            <div class="pm-staff-profile-details text-center">
+              <p class="pm-staff-profile-name">Apurwa Sinha</p>
+              <p class="pm-staff-profile-title">Founder & CEO</p>
+  
+              <p class="pm-staff-profile-bio">Apurwa Sinha is the founder and CEO of AcuteMentors. With over a decade of experience in the industry, she is a seasoned expert in mentorship and leadership development. Her passion for empowering individuals to reach their full potential has been the driving force behind AcuteMentors' success. Through innovative strategies and personalized guidance, Apurwa has helped countless professionals achieve their career goals. Her dedication to excellence and commitment to fostering growth make her a highly respected figure in the field.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Faculity member-->
+  <!--Pricing-->
+  <section id="pricing" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Pricing</h2>
+          <p>Choose the plan that suits your needs. We offer flexible pricing to fit every budget.</p>
+          <hr class="bottom-line">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="price-table">
+            <div class="pricing-head">
+              <h4>FREE MANIA</h4>
+              <span class="fa fa-inr curency"></span> <span class="amount">0</span>
+            </div>
+            <div class="price-in mart-15">
+              <a href="#" class="btn btn-bg green btn-block">BOOK SLOT</a>
+            </div>
+            <div class="pricing-content">
+              <ul>
+                <li><i class="fa fa-circle"></i> Workshop for 45 minutes</li>
+                <li><i class="fa fa-circle"></i> E-book</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="price-table">
+            <div class="pricing-head">
+              <h4>CRAZY 499</h4>
+              <span class="fa fa-inr curency"></span> <span class="amount">499</span>
+            </div>
+            <div class="price-in mart-15">
+              <a href="#" class="btn btn-bg green btn-block">BOOK SLOT</a>
+            </div>
+            <div class="pricing-content">
+              <ul>
+                <li><i class="fa fa-circle"></i> 1 Workshop for 45 minutes</li>
+                <li><i class="fa fa-circle"></i> 1 premium in-person Event Exposure</li>
+                <li><i class="fa fa-circle"></i> E-book</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="price-table">
+            <div class="pricing-head">
+              <h4>UNLIMITED DHAMAKA 999</h4>
+              <span class="fa fa-inr curency"></span> <span class="amount">999</span>
+            </div>
+            <div class="price-in mart-15">
+              <a href="#" class="btn btn-bg green btn-block">BOOK SLOT</a>
+            </div>
+            <div class="pricing-content">
+              <ul>
+                <li><i class="fa fa-circle"></i> Unlimited Workshop for 1 year</li>
+                <li><i class="fa fa-circle"></i> Unlimited premium in-person Event Exposure for 1 year</li>
+                <li><i class="fa fa-circle"></i> Certificate upon completion</li>
+                <li><i class="fa fa-circle"></i> E-book</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Pricing-->
+  <!--Contact-->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Contact Us</h2>
+          <p>We are here to answer any questions you may have about our experiences. Reach out to us and we'll respond as soon as we can.</p>
+          <hr class="bottom-line">
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="form contact-form">
+            <form action="send_email.php" method="post">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control form-text" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control form-text" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <textarea name="message" class="form-control form-text" rows="5" id="message" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Feel free to get in touch with us for any queries or support. We are always here to help you.</p>
+            <ul class="address">
+              <li><i class="fa fa-map-marker"></i> Bengaluru, Karnataka, India</li>
+              <li><i class="fa fa-phone"></i> +91919663353818</li>
+              <li><i class="fa fa-envelope"></i> apurwa@acutementors.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Contact-->
+  <!--Footer-->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+
+      <h3>Join our WhatsApp Group</h3>
+      <form id="whatsapp-form" class="mc-trial row">
+        <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
+          <div class=" controls">
+            <input name="name" id="name" placeholder="Enter Your Name" class="form-control" type="text" required>
+          </div>
+        </div>
+        <!-- End name input -->
+        <div class="form-group col-md-3 col-sm-4">
+          <div class=" controls">
+            <input name="email" id="email" placeholder="Enter Your Email" class="form-control" type="email" required>
+          </div>
+        </div>
+        <!-- End email input -->
+        <div class="col-md-2 col-sm-4">
+          <p>
+            <button type="button" id="submit-btn" class="btn btn-block btn-submit">
+            Submit <i class="fa fa-arrow-right"></i></button>
+          </p>
+        </div>
+      </form>
+      <!-- End whatsapp-form -->
+      <script>
+        $(document).ready(function() {
+          // When submit button is clicked
+          $('#submit-btn').click(function() {
+            // Get name and email from form
+            var name = $('#name').val();
+            var email = $('#email').val();
+    
+            // Construct WhatsApp message URL
+            var message = encodeURIComponent('Name: ' + name + '\nEmail: ' + email);
+            var whatsappURL = 'https://wa.me/919663353818?text=' + message;
+    
+            // Redirect to WhatsApp URL
+            window.location.href = whatsappURL;
+          });
+        });
+      </script>
+
+
+      <ul class="social-links">
+        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-instagram fa-fw"></i></a></li>
+        <li><a href="mailto:apurwa@acutementors.com"><i class="fa fa-envelope fa-fw"></i></a></li>
+        <li><a href="https://wa.me/919663353818" target=”_blank”><i class="fa fa-whatsapp fa-fw"></i></a></li>
+        <li><a href=https://www.linkedin.com/in/acute-mentors-2039612a8 target=”_blank”><i class="fa fa-linkedin fa-fw"></i></a></li>
+      </ul>
+      © 2024 Acute Mentor. All rights reserved
+      <div class="credits">
+        Designed by <a href="https://onerfusion.com/">OnerFusion®️</a>
+      </div>
+    </div>
+  </footer>
+  <!--/ Footer-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
